@@ -18,13 +18,13 @@ public class Polynomial {
             if (i < this.coefficients.length){
                 this_coefficient = this.coefficients[i];
             } else {
-				this_coefficient = 0;
-			}
+		this_coefficient = 0;
+	    }
             if (i < p.coefficients.length){
                 p_coefficient = p.coefficients[i];
             } else {
-				p_coefficient = 0;
-			}
+		p_coefficient = 0;
+	    }
             sum_coefficients[i] = this_coefficient + p_coefficient;
         }
         return new Polynomial(sum_coefficients);
